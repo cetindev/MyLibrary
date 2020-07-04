@@ -3,7 +3,7 @@ There are big bugs since the project is under development.
 We will continue with sure steps.
 
 <<<<<<< HEAD
-![image](img2.png)
+![image](https://github.com/cihatdev/MyLibrary/blob/master/img/img.png)
 
 [image](img.png)
 
