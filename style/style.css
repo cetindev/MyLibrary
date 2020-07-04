@@ -1,0 +1,195 @@
+/* Style will be written here */
+html *{
+  padding: 0px;
+  border: 0px;
+  margin: 0px;;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Yellowtail', cursive;
+   font-size: 14px;
+  background-color: antiquewhite;
+  font-size: 16px;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  background: url(https://ae01.alicdn.com/kf/HTB1ADwmSXXXXXcIapXXq6xXFXXXO.jpg_q50.jpg);
+  color: aliceblue;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+}
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 5px 0 ;
+}
+.addBook {
+  display: flex;
+  justify-content: center;
+}
+.addBook button {
+  padding: 8px 18px;
+  margin: 2px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  text-decoration: underline;
+  border: 2px solid purple;
+  transition: 300ms all;
+}
+.addBook button:hover {
+  color: white;
+  background-color: black;
+}
+.content {
+  background-color: bisque;
+  color: black;
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  /* flex: 1; */
+  justify-content: space-around;
+  /* height: 635px; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.08fr 1fr;
+  grid-template-areas: 'existingBooks booksToRead'
+                       'existingBookList readBookList'   ;
+  border: 2px solid black;            
+  height: 100vh;     
+  margin: 20px 10px;      
+}
+.existingBooks {
+  font-size: 24px;
+  padding-bottom: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  grid-area: existingBooks;
+    border: 2px solid black;
+}
+.booksToRead {
+  font-size: 24px;
+  padding-bottom: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  grid-area: booksToRead;
+  border: 2px solid black;
+}
+.existingBooksTitle {
+  font-size: 1.5rem;
+}
+.existingBooksTitle:hover {
+  color: blueviolet;
+}
+.booksToReadTitle:hover {
+  color: chocolate;
+}
+.booksToReadTitle {
+  font-size: 1.5rem;
+}
+.existingBookList {
+  font-size: 24px;
+  padding-top: 5px;
+  display: flex;
+  padding-left: 10px;
+  justify-content: start;
+  grid-area: existingBookList;
+  padding-bottom: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+.readBookList {
+  font-size: 24px;
+  padding-top: 5px;
+  display: flex;
+  padding-left: 10px;
+  justify-content: start;
+  grid-area: readBookList;
+  padding-bottom: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+viewport {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  z-index: 9;
+  align-items: center;
+    position: absolute;
+  width: 300px;
+  height: 160px;
+  top: 100px;
+  left: 340px;
+}
+#newBook {
+  display: none;
+  background-color: crimson;
+  z-index: 1;
+  border: 2px solid firebrick;
+  border-radius: 5px;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  line-height: 1;
+  top: 300px;
+  left: 400px;  
+  box-sizing: border-box;
+  position: static;
+}
+#bookName{
+  margin-left:21px;
+  margin-bottom:5px;
+}
+#bookAuthor{
+  margin-left:21px;
+  margin-bottom:5px;
+}
+#bookPages {
+  margin-left:21px;
+  margin-bottom:8px;
+}
+.textForm{
+  width: 50%;
+  border:2px solid blue;
+  border-radius:5px;
+  padding-left:5px;
+  line-height: 5px;
+}
+#newBook > .select {
+  margin: 5px;
+  padding: 5px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.BookCard {
+  padding: 5px;
+  height: 140px;
+  width: 120px;
+  text-align: center;
+  align-content: center;
+  line-height: 1.5;
+  margin-bottom: 7.5px;
+  margin-top: 7.5px;
+  text-shadow: 1px 1px;
+  border: 1px solid red;
+  margin: 5px;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.bookDelete {
+  padding: 5px;
+  background-color: red;
+}
