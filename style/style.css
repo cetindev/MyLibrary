@@ -187,9 +187,11 @@ viewport {
   margin: 5px;
   font-size: large;
   border-radius: 10px;
+  
 }
 
 .bookDelete {
   padding: 5px;
   background-color: red;
+  border-radius: 5px;
 }
